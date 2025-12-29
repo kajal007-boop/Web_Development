@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: relative;
+        animation: myfirst 5s linear 2s infinite;
+        border-radius: 50%;
+      }
+      @keyframes myfirst {
+        0% {
+          background-color: grey;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: darkgreen;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: goldenrod;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: rgb(37, 46, 54);
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: rgba(0, 0, 0, 0.063);
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <p>This example uses the shorthamd animation property:</p>
+    <div></div>
+  </body>
+</html>
